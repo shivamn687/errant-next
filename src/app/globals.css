@@ -16,12 +16,43 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 8px;
+    height: 20px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    border: 1px solid #CCC;
+    border-radius: 2px;
+    background: #FFF;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #E0E0E0;
+    border-radius: 100vh;
+    border: 2px solid #E0E0E0;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #E0E0E0;
+  }
 }
+
+@font-face {
+  font-family: 'Avenir LT Std';
+  src: url('../../public/assets/fonts/avenir-normal.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir LT Std';
+  src: url('../../public/assets/fonts/avenir-bold.otf') format('opentype');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Avenir LT Std';
+  src: url('../../public/assets/fonts/avenir-black.otf') format('opentype');
+  font-weight: 900;
+}
+body {font-family: "Avenir LT Std", sans-serif !important;}

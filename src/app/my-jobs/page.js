@@ -1,4 +1,4 @@
-import Header from "../components/header";
+import Header from "../components/Header";
 import Image from "next/image";
 import Jobs from "../../../public/assets/images/jobs.svg";
 import JobItem from "../components/job-item";

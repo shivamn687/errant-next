@@ -1,5 +1,5 @@
-import Header from "../components/header"
-import Notification from "../components/notification.js"
+import Header from "../components/Header"
+import Notification from "../components/notifications"
 
 export default function MyProfile() {
   return (

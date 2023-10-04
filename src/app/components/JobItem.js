@@ -19,10 +19,10 @@ export default function JobItem() {
     };
     return (
         <>
-            <ul className="job-items overflow-y-auto scrollbar max-h-[680px] space-y-1">
+            <ul className="job-items overflow-y-auto scrollbar max-h-[780px] space-y-1">
                 {
                     jobs.map((item) => (
-                        <li onClick={() => { setShowModal(!showModal) }} className="dashboard-box p-4 border border-[#cccccc] bg-white rounded hover:border-[#000] hover:cursor-pointer">
+                        <li onClick={() => { setShowModal(!showModal) }} className="dashboard-box p-4 border border-[#cccccc] bg-white rounded hover:border-[#000] hover:cursor-pointer transition">
                             <h3 className="text-[#1C3D38] text-2xl font-black">{item.title}</h3>
                             <p className="text-[#1C3D38] text-xl my-1">Lower Manhattan</p>
                             <p className="text-[#1C3D38] text-xl font-bold">Wed, 21 June . <span className="text-[#707070] font-normal">8:30 am ‒ 11:30 am</span></p>
@@ -82,7 +82,7 @@ export default function JobItem() {
                                     <p className="text-lg">Adam Doe <br /> sample@leademail.com <br /> +1-234-567-888</p>
                                     <hr className="border-[#CCCCCC]" />
                                     <h4 className="text-lg font-black text-[#081110]">Service Category</h4>
-                                    <ul className="list-disc pl-4 text-[#081110]">
+                                    <ul className="list-disc pl-4 text-lg text-[#081110]">
                                         <li>Specific Service</li>
                                         <li>Specific Service 2</li>
                                     </ul>
@@ -96,6 +96,7 @@ export default function JobItem() {
                                         <a href="" className="text-lg text-[#2F80ED] underline">Get Direction</a>
                                     </div>
                                     <Map className="rounded" center={center} />
+                                    <button type="button" className="font-black text-xl text-white bg-[#1C3D38] border border-[#1C3D38] rounded w-full p-[9px] hover:bg-white hover:text-[#1C3D38] transition">Check In</button>
                                 </div>
                             </div>
                         </div>
